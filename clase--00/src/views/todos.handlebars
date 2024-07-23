@@ -1,0 +1,21 @@
+<h1>Todo List</h1>
+
+{{#each todos}}
+    <div>
+        <h3> Title: {{title}} </h3>
+        <p> Descripción: {{description}} </p>
+        {{#if completed}}
+            <p> Completada </p>
+        {{else}}    
+            <p> Pendiente </p>
+            <form action="/todos/{{_id}}/complete" method="POST">
+                <button type="submit"> Marcar como completado </button>
+            </form>
+        {{/if}}
+        <form action="/todos/{{_id}}/delete" method="POST">
+            <button type="submit"> Eliminar </button>
+        </form>
+    </div>
+{{/each}}
+
+<a href="/new"> Crear un nuevo ToDO </a>
