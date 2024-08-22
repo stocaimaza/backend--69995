@@ -1,0 +1,19 @@
+<h1>Listado de Helados</h1>
+
+<ul>
+    {{#each helados}}
+        <li> {{this.nombre}} </li>
+    {{/each}}
+</ul>
+
+<form action="/helados" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre del Helado">
+    <br><br>
+
+    <input type="text" name="sabor" placeholder="Sabor del Helado">
+    <br><br>
+
+    <textarea name="descripcion" placeholder="Descripcion del Helado"></textarea>
+    <br><br>
+    <button type="submit"> Agregar Helado </button>
+</form>
