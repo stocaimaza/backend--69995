@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Pelota de fútbol",
+    "categoria": "Deportes",
+    "precio": 15.99
+  },
+  {
+    "nombre": "Muñeca Barbie",
+    "categoria": "Juguetes para niñas",
+    "precio": 25.49
+  },
+  {
+    "nombre": "Pistola Airsoft ",
+    "categoria": "soldaditos",
+    "precio": 125000000
+  },
+  {
+    "nombre": "Cocinita de Homero ",
+    "categoria": "comidita",
+    "precio": 125000000
+  }
+]
